@@ -1,6 +1,16 @@
 # Human-robot Interaction
 
-## Dependencies 
+## Cloning
+
+When cloning add the `--recurse-submodules` argument to include the submodules.
+
+To update or initialise submodules after cloning the repo use
+
+```bash
+git submodule update --init --recursive
+```
+
+## Dependencies
 
 Please install the nav2 stack and slam-toolbox:
 ```bash

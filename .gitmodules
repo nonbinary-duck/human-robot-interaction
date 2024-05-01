@@ -1,0 +1,3 @@
+[submodule "src/yolov8_ros"]
+	path = src/yolov8_ros
+	url = ../../mgonzs13/yolov8_ros.git
