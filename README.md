@@ -24,9 +24,9 @@ source install/setup.bash
 To run the navigation stack please use:
 ```bash
 # The stack
-ros2 launch tidybot_solution slam_stack.launch.py
+ros2 launch tidybot_navigation slam_stack.launch.py
 
 # List params
-ros2 launch tidybot_solution slam_stack.launch.py --show-args
+ros2 launch tidybot_navigation slam_stack.launch.py --show-args
 ```
 
