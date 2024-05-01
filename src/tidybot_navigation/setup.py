@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import find_packages, setup
 
-package_name = 'tidybot_solution'
+package_name = 'tidybot_navigation'
 
 setup(
     name=package_name,
@@ -28,8 +28,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'identify_cubes = tidybot_solution.identify_cubes:main',
-            'tidy_cubes = tidybot_solution.tidy_cubes:main'
+            'tidy_cubes = tidybot_navigation.tidy_cubes:main'
         ],
     },
 )

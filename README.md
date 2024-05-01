@@ -1,4 +1,4 @@
-# Villanelle O'Reilly Autonomous Mobile Robots Tidybot assignment solution
+# Human-robot Interaction
 
 ## Dependencies 
 
@@ -9,7 +9,7 @@ sudo apt install ros-humble-tf2-tools ros-humble-tf2-py ros-humble-tf-transforma
 
 Also install python packages:
 ```bash
-pip3 install opencv-python
+# pip3 install opencv-python
 sudo pip3 install transforms3d
 ```
 
@@ -21,19 +21,12 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-To run the simulator please use:
+To run the navigation stack please use:
 ```bash
-# The basic world (with green cubes)
-ros2 launch tidybot_solution sim_and_stack.launch.py
-# One of the level 2 worlds
-ros2 launch tidybot_solution sim_and_stack.launch.py world:="level_2_1.world"
-# Add red cubes too
-ros2 launch tidybot_solution sim_and_stack.launch.py world:="level_2_1.world" add_red_cubes:="True"
+# The stack
+ros2 launch tidybot_solution slam_stack.launch.py
+
 # List params
-ros2 launch tidybot_solution sim_and_stack.launch.py --show-args
+ros2 launch tidybot_solution slam_stack.launch.py --show-args
 ```
 
-And to run the solution please use:
-```bash
-ros2 launch tidybot_solution solution.launch.py
-```
