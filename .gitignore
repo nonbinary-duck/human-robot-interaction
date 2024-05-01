@@ -4,7 +4,8 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
+# *.so
+# ^ This is commented out as we currently store piper binaries in the project, but might eventually use the source properly
 
 # Distribution / packaging
 .Python
